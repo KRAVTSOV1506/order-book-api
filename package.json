@@ -1,0 +1,37 @@
+{
+    "name": "linkedin",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "npx ts-node index.ts",
+        "test": "npx ts-node test.ts"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/KRAVTSOV1506/linkedIn.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "homepage": "https://github.com/KRAVTSOV1506/linkedIn#readme",
+    "dependencies": {
+        "axios": "^1.7.2",
+        "buffer": "^6.0.3",
+        "concurrently": "^8.2.2",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.5",
+        "express": "^4.17.1",
+        "nodemailer": "^6.9.13",
+        "pg": "^8.11.5",
+        "ts-postgres": "^2.0.2"
+    },
+    "devDependencies": {
+        "@types/cors": "^2.8.17",
+        "@types/express": "^4.17.21",
+        "@types/node": "^20.12.7",
+        "@types/nodemailer": "^6.4.15",
+        "@types/pg": "^8.11.5",
+        "typescript": "^5.4.5"
+    }
+}
