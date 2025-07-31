@@ -10,3 +10,13 @@ export const POOL = new Pool({
 	database: process.env.DB_NAME,
 	port: Number(process.env.DB_PORT)
 });
+
+export const pingDatabase = async (): Promise<boolean> => {
+	try {
+	  const result = await POOL.query('SELECT 1');
+	  return result.rows[0]['?column?'] === 1;
+	} catch (error) {
+	  console.error('Database ping failed:', error);
+	  return false;
+	}
+};
